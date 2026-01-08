@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Business Name</title>
+  <style>
+    /* GENERAL STYLES */
+    body { margin:0; font-family: Arial, sans-serif; background:#fff8f5; color:#333; text-align:center; }
+    header { background:#ff7aa2; color:white; padding:25px 15px; }
+    nav a { margin:0 10px; color:white; text-decoration:none; font-weight:bold; }
+    section { padding:40px 20px; }
+    footer { background:#333; color:white; padding:15px; font-size:14px; }
+
+    /* BUTTON STYLES */
+    button { background:#ff4d79; color:white; border:none; padding:12px 20px; border-radius:8px; font-size:16px; cursor:pointer; }
+    button:hover { background:#e63b65; }
+    .copy-btn { background:#ffa500; margin-top:10px; }
+
+    /* HERO SECTION */
+    .hero {
+      background: #ffe6ec;
+      padding: 30px 15px;
+      margin-bottom: 20px;
+    }
+    .hero h2 { margin-bottom: 10px; }
+    .hero p { margin-bottom: 20px; font-size: 18px; }
+    .hero img { width: 100%; max-height: 400px; object-fit: cover; border-radius: 15px; }
+
+    /* PRODUCT SECTION */
+    .products img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .products .product {
+      background:white;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      flex: 0 0 auto;
+      text-align:center;
+      transition: transform 0.3s;
+      margin-bottom: 15px;
+    }
+
+    .products .product:hover { transform: scale(1.05); }
+
+    .products {
+      display: flex;
+      overflow-x: auto;
+      gap: 15px;
+      scroll-behavior: smooth;
+      padding: 20px;
+    }
+
+    .products::-webkit-scrollbar { height: 8px; }
+    .products::-webkit-scrollbar-thumb { background: #ff7aa2; border-radius: 4px; }
+
+    @media (min-width: 768px) {
+      .products { flex-wrap: wrap; justify-content: center; }
+      .products .product { margin: 15px; }
+    }
+
+    .products h2 { width: 100%; margin-bottom: 30px; }
+
+    /* ABOUT SECTION */
+    #about { background:#fff0f2; padding:50px 20px; }
+
+    /* CONTACT SECTION */
+    #contact { background:#ffe6ec; padding:50px 20px; }
+
+    /* TESTIMONIALS */
+    #reviews { background:#fff0f2; padding:40px 20px; }
+    #reviews h2 { margin-bottom:20px; }
+    #reviews p { margin-bottom:10px; font-style:italic; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Your Business Name</h1>
+  <p>Beautiful products made with love 💕</p>
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#reviews">Reviews</a>
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <h2>Welcome to Our Rose Petal Curtains</h2>
+  <p>Luxury and beauty for every home 🌸</p>
+  <img src="https://raw.githubusercontent.com/ololadekuti13-hue/Rose-petal-curtains-/main/product1.png" alt="Hero Banner">
+</section>
+
+<!-- PRODUCTS SECTION -->
+<section id="products" class="products">
+  <h2>Our Products</h2>
+
+  <div class="product">
+    <img src="https://raw.githubusercontent.com/ololadekuti13-hue/Rose-petal-curtains-/main/product1.png" alt="Product 1">
+    <p>Rose Petal Curtain – Design 1</p>
+    <p>Soft organza fabric, perfect for elegance and beauty.</p>
+    <button onclick="orderNow()">Order on WhatsApp</button>
+  </div>
+
+  <div class="product">
+    <img src="https://raw.githubusercontent.com/ololadekuti13-hue/Rose-petal-curtains-/main/product2.png" alt="Product 2">
+    <p>Rose Petal Curtain – Design 2</p>
+    <p>Elegant and soft, adds a luxurious touch to your room.</p>
+    <button onclick="orderNow()">Order on WhatsApp</button>
+  </div>
+
+  <div class="product">
+    <img src="https://raw.githubusercontent.com/ololadekuti13-hue/Rose-petal-curtains-/main/product3.png" alt="Product 3">
+    <p>Rose Petal Curtain – Design 3</p>
+    <p>Beautiful organza petals, ideal for any home decor.</p>
+    <button onclick="orderNow()">Order on WhatsApp</button>
+  </div>
+
+  <div class="product">
+    <img src="https://raw.githubusercontent.com/ololadekuti13-hue/Rose-petal-curtains-/main/product4.png" alt="Product 4">
+    <p>Rose Petal Curtain – Design 4</p>
+    <p>Soft fabric with elegant rose patterns, adds charm.</p>
+    <button onclick="orderNow()">Order on WhatsApp</button>
+  </div>
+
+  <div class="product">
+    <img src="https://raw.githubusercontent.com/ololadekuti13-hue/Rose-petal-curtains-/main/product5.png" alt="Product 5">
+    <p>Rose Petal Curtain – Design 5</p>
+    <p>Luxurious organza petals, perfect for living rooms.</p>
+    <button onclick="orderNow()">Order on WhatsApp</button>
+  </div>
+
+  <div class="product">
+    <img src="https://raw.githubusercontent.com/ololadekuti13-hue/Rose-petal-curtains-/main/product6.jpg" alt="Product 6">
+    <p>Rose Petal Curtain – Design 6</p>
+    <p>Soft, elegant fabric to beautify your space.</p>
+    <button onclick="orderNow()">Order on WhatsApp</button>
+  </div>
+
+  <div class="product">
+    <img src="https://raw.githubusercontent.com/ololadekuti13-hue/Rose-petal-curtains-/main/product7.jpg" alt="Product 7">
+    <p>Rose Petal Curtain – Design 7</p>
+    <p>Perfect combination of elegance and comfort.</p>
+    <button onclick="orderNow()">Order on WhatsApp</button>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    We create affordable and stylish items for everyday use.
+    Every product is made with love, care, and attention to detail.
+  </p>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="reviews">
+  <h2>What Our Customers Say</h2>
+  <p>"These curtains transformed my living room! 🌸" – Ada</p>
+  <p>"Absolutely beautiful and well-made! Highly recommended." – Chidi</p>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>WhatsApp: <span id="whatsapp-number">2348157531057</span></p>
+  <button class="copy-btn" onclick="copyNumber()">Copy Number</button>
+  <p>Email: yourbusiness@email.com</p>
+</section>
+
+<footer>
+  © 2026 Your Business Name. All rights reserved.
+</footer>
+
+<script>
+let whatsappOpened = false;
+
+function orderNow() {
+    if (whatsappOpened) return; 
+    whatsappOpened = true;
+
+    alert("You are being redirected to WhatsApp! Please wait...");
+
+    setTimeout(function() {
+        window.location.href = "https://wa.me/2348157531057"; // replace with your number
+    }, 500);
+}
+
+function copyNumber() {
+    const number = document.getElementById("whatsapp-number").innerText;
+    navigator.clipboard.writeText(number).then(() => {
+        alert("WhatsApp number copied to clipboard!");
+    });
+}
+</script>
+
+</body>
+</html>
